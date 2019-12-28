@@ -1,15 +1,11 @@
-'use strict'
-
-const path = require('path')
-
 module.exports = {
-    outputDir: './dist',
-    publicPath: './',
-    assetsDir: './',
-    // ポートなどの設定
-    devServer: {
-        port: 8888,
-        contentBase: path.resolve(__dirname, 'public'),
-        host: 'localhost',
-    },
-}
+  outputDir: "./dist",
+  publicPath: "./",
+  assetsDir: "./",
+  devServer: {
+    port: 8888,
+    contentBase: "D:\\proj\\vue\\dtdb-client\\public",
+    host: "localhost"
+  },
+  transpileDependencies: ["vuetify"]
+};
