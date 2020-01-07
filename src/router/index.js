@@ -1,30 +1,40 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+// コンポーネントを読み込む
+import Home from '../views/Home'
+import About from '../views/About'
+import Page1 from '../views/Page1'
+import Page2 from '../views/Page2'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/",
-    name: "home",
+    path: '/',
+    name: 'Home',
     component: Home
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: '/about',
+    name: 'About',
+    component: About
+  },
+  {
+    path: '/page1',
+    name: '`Page1`',
+    component: Page1
+  },
+  {
+    path: '/page2',
+    name: 'page2',
+    component: Page2
   }
-];
+]
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
-});
+})
 
-export default router;
+export default router
