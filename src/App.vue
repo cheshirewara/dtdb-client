@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
+    <v-app-bar 
+      app 
+      color="primary" 
       dark>
       <v-app-bar-nav-icon />
       <!-- <div class="d-flex align-center">
@@ -25,10 +25,7 @@
 
       <v-spacer />
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text>
+      <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
         <span class="mr-2">LR</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
@@ -37,42 +34,18 @@
     <v-content>
       <router-view />
     </v-content>
-    <v-footer
-      color="primary lighten-1"
-      padless>
-      <v-row
-        justify="center"
-        no-gutters>
-        <v-btn
-          color="white"
-          text
-          rounded
-          to="/"
-          class="my-2">
+    <v-footer color="primary lighten-1" padless>
+      <v-row justify="center" no-gutters>
+        <v-btn color="white" text rounded to="/" class="my-2">
           Home
         </v-btn>
-        <v-btn
-          color="white"
-          text
-          rounded
-          to="/about"
-          class="my-2">
+        <v-btn color="white" text rounded to="/about" class="my-2">
           About
         </v-btn>
-        <v-btn
-          color="white"
-          text
-          rounded
-          to="/page1"
-          class="my-2">
+        <v-btn color="white" text rounded to="/page1" class="my-2">
           Page1
         </v-btn>
-        <v-btn
-          color="white"
-          text
-          rounded
-          to="/page2"
-          class="my-2">
+        <v-btn color="white" text rounded to="/page2" class="my-2">
           Page2
         </v-btn>
         <!-- <v-btn
@@ -85,9 +58,7 @@
           class="my-2">
           {{ link }}
         </v-btn> -->
-        <v-col
-          class="primary lighten-2 py-4 text-right white--text"
-          cols="12">
+        <v-col class="primary lighten-2 py-4 text-right white--text" cols="12">
           <div>
             &copy; 2019 - {{ new Date().getFullYear() }} — {{ app_title }}
           </div>
@@ -100,8 +71,7 @@
 <script>
 export default {
   name: 'App',
-  components: {
-  },
+  components: {},
   data: () => ({
     links: [
       'Home',
@@ -109,7 +79,7 @@ export default {
       'page1',
       'page2'
     ],
-    app_title: 'DTDB　'
+    app_title: 'DTDB'
   })
 }
 </script>

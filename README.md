@@ -1,4 +1,4 @@
-Dicney Tomica Database Client Viewer App
+Disney Tomica Database Client Viewer App
 ====
 
 ## Requirement
