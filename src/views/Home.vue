@@ -1,21 +1,24 @@
 <template>
-  <v-content>
-    <v-container>
-      <h1>Home</h1>
-    </v-container>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </v-content>
+  <v-container>
+    <!-- <HomeMenu /> -->
+    {{categories}}
+  </v-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import HomeMenu from '@/components/HomeMenu'
+import CallCategory from '@/mixins/CallCategory.js'
 
 export default {
 
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  // components: {
+  //   HomeMenu
+  // },
+  data: ()=>({}),
+  methods: {},
+  mounted() {},
+  mixins: [CallCategory],
 }
 </script>

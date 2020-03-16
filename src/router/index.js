@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 // コンポーネントを読み込む
-import Home from '../views/Home'
-import About from '../views/About'
-import Page1 from '../views/Page1'
-import Page2 from '../views/Page2'
+import Home from '@/views/Home'
+import About from '@/views/About'
+import Page1 from '@/views/Page1'
+import Page2 from '@/views/Page2'
 
 Vue.use(VueRouter)
 
@@ -21,7 +21,7 @@ const routes = [
   },
   {
     path: '/page1',
-    name: '`Page1`',
+    name: 'Page1',
     component: Page1
   },
   {

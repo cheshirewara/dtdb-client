@@ -11,6 +11,11 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
+  globals: {
+    "window": true,
+    "process": true,
+    "module": true,
+  },
   // *.vue ファイルを lint にかけるために必要
   plugins: ['vue'],
   rules: {
