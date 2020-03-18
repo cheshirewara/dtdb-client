@@ -1,6 +1,16 @@
 <template>
   <v-container>
-    <v-layout text-center wrap>
+    <v-row>
+    <v-btn color="warning"
+      v-for="(cat, i) in category"
+      :key="i"
+      class="mx-3">
+      <!-- :href="link.href" -->
+      <!-- @click="resetValidation"> -->
+      {{ cat.name }}
+    </v-btn>
+    </v-row>   
+    <!-- <v-layout text-center wrap>
       <v-flex xs12>
         <v-img :src="require('@/assets/logo.svg')" class="my-3" contain height="200" />
       </v-flex>
@@ -77,13 +87,19 @@
           </a>
         </v-layout>
       </v-flex>
-    </v-layout>
+    </v-layout> -->
   </v-container>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HomeMenu',
+
+  props: {
+    category: {
+      type: Array
+    } 
+  },
 
   data: () => ({
     ecosystem: [

@@ -1,24 +1,24 @@
 <template>
-  <v-container>
-    <!-- <HomeMenu /> -->
-    {{categories}}
-  </v-container>
+  <!-- <v-container> -->
+    <HomeMenu :category="categories"/>
+    <!-- {{categories}} -->
+  <!-- </v-container> -->
 </template>
 
 <script>
 // @ is an alias to /src
-// import HomeMenu from '@/components/HomeMenu'
-import CallCategory from '@/mixins/CallCategory.js'
+import HomeMenu from '@/components/HomeMenu'
+import GetCategory from '@/mixins/GetCategory.js'
 
 export default {
 
   name: 'Home',
-  // components: {
-  //   HomeMenu
-  // },
+  components: {
+    HomeMenu
+  },
   data: ()=>({}),
   methods: {},
   mounted() {},
-  mixins: [CallCategory],
+  mixins: [GetCategory],
 }
 </script>

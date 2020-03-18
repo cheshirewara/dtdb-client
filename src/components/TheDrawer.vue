@@ -32,7 +32,7 @@ export default {
       { icon: 'mdi-contacts', text: 'Contacts' },
       { icon: 'mdi-history', text: 'Frequently contacted' },
       { icon: 'mdi-content-copy', text: 'Duplicates' },
-      { icon: 'mdi-settings', text: 'Settings' },
+      { icon: 'mdi-cog', text: 'Settings' },
       { icon: 'mdi-message', text: 'Send feedback' },
       { icon: 'mdi-help-circle', text: 'Help' },
       { icon: 'mdi-cellphone-link', text: 'App downloads' },
